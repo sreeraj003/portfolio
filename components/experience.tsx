@@ -1,50 +1,40 @@
-import { Card, CardContent } from "@/components/ui/card"
-import { Briefcase, Calendar } from "lucide-react"
+import { Card, CardContent } from "@/components/ui/card";
+import { Briefcase, Calendar } from "lucide-react";
 
 const experiences = [
   {
-    title: "Senior Full Stack Developer",
-    company: "Tech Innovations Inc.",
-    period: "2022 - Present",
+    title: "Web Developer",
+    company: "SCITA solutions.",
+    period: "2024 - Present",
     description:
-      "Lead development of scalable web applications using MERN stack. Mentor junior developers and architect solutions for complex business requirements.",
+      "Lead development of scalable web applications using React, Node.js and postgreSQL. Mentor junior developers and architect solutions for complex business requirements.",
     highlights: [
-      "Architected microservices infrastructure reducing response time by 40%",
+      "Architected and developed a major web applications increasing client satisfaction by 60%",
       "Led team of 5 developers in building enterprise SaaS platform",
-      "Implemented CI/CD pipeline improving deployment frequency by 300%",
+      "Trained 4 juniors to develop efficient code following best practices",
     ],
   },
   {
     title: "Full Stack Developer",
-    company: "Digital Solutions Ltd.",
-    period: "2020 - 2022",
+    company: "Freelance Projects",
+    period: "2022 - 2024",
     description:
       "Developed and maintained multiple client projects using MERN stack. Collaborated with cross-functional teams to deliver high-quality products.",
     highlights: [
-      "Built 15+ production applications serving 100K+ users",
+      "Built 5+ production applications serving 50K+ users",
       "Optimized database queries reducing load time by 60%",
       "Integrated third-party APIs and payment gateways",
     ],
   },
-  {
-    title: "Junior Web Developer",
-    company: "StartUp Ventures",
-    period: "2018 - 2020",
-    description:
-      "Started my professional journey building responsive web applications and learning industry best practices in agile environment.",
-    highlights: [
-      "Developed RESTful APIs serving mobile and web clients",
-      "Implemented responsive designs with React and Tailwind CSS",
-      "Participated in code reviews and technical discussions",
-    ],
-  },
-]
+];
 
 export function Experience() {
   return (
     <section id="experience" className="py-24 px-4 md:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">Work Experience</h2>
+        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
+          Work Experience
+        </h2>
 
         <div className="space-y-6">
           {experiences.map((exp, index) => (
@@ -56,7 +46,9 @@ export function Experience() {
                       <Briefcase className="h-5 w-5 text-primary" />
                       {exp.title}
                     </h3>
-                    <p className="text-lg text-muted-foreground">{exp.company}</p>
+                    <p className="text-lg text-muted-foreground">
+                      {exp.company}
+                    </p>
                   </div>
                   <div className="flex items-center gap-2 text-muted-foreground">
                     <Calendar className="h-4 w-4" />
@@ -64,7 +56,9 @@ export function Experience() {
                   </div>
                 </div>
 
-                <p className="text-base leading-relaxed mb-4">{exp.description}</p>
+                <p className="text-base leading-relaxed mb-4">
+                  {exp.description}
+                </p>
 
                 <ul className="space-y-2">
                   {exp.highlights.map((highlight, i) => (
@@ -80,5 +74,5 @@ export function Experience() {
         </div>
       </div>
     </section>
-  )
+  );
 }

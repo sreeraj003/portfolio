@@ -1,13 +1,8 @@
-.profile-wrapper {
-  width: 320px;
-  aspect-ratio: 3 / 4;
-  background: linear-gradient(135deg, #6ee7f9, #a855f7);
-  padding: 6px;
-  clip-path: path(M40, 0 C10, 20, 0, 50, 0, 90 V350 C0, 390, 30, 420, 70, 440);
-}
+
 
 .profile-img {
-  border-radius: 46% 54% 87% 13% / 30% 42% 58% 70%;
+  /* border-radius: 46% 54% 87% 13% / 30% 42% 58% 70%; */
+  border-radius: 10%;
   object-fit: cover;
   clip-path: inherit;
 }

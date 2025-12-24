@@ -30,7 +30,7 @@ const projects = [
       "A visually rich digital platform for a granite business, allowing customers to explore granite collections, compare properties, and request quotations online.",
     technologies: ["React.js", "HTML", "CSS", "Tailwind"],
     image: "/tronetta.png",
-    live: "https://lbs-home.netlify.app",
+    live: "https://tronetta.netlify.app/",
   },
   {
     title: "Consultaion Platform",
