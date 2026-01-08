@@ -6,7 +6,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
@@ -23,6 +23,14 @@ const projects = [
     technologies: ["React.js", "HTML", "Tailwind"],
     image: "/lbs-home.png",
     live: "https://lbs-home.netlify.app",
+  },
+  {
+    title: "Brand home page",
+    description:
+      "Well informatory home page for a spice brand which provides information about their products and organization.",
+    technologies: ["V0", "Next.js", "React.js", "HTML", "Tailwind"],
+    image: "/aromaya.png",
+    live: "https://aromaya.netlify.app",
   },
   {
     title: "Industry home page",
