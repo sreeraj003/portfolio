@@ -1,33 +1,9 @@
 "use client";
 
-import type React from "react";
-
-import { useState } from "react";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Mail, MessageCircle, Phone } from "lucide-react";
 
 export function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert("Thank you for your message! I'll get back to you soon.");
-    setFormData({ name: "", email: "", message: "" });
-  };
-
   return (
     <section id="contact" className="py-24  px-4 md:px-6 lg:px-8 bg-muted/30">
       <div className="max-w-5xl mx-auto">
@@ -81,11 +57,11 @@ export function Contact() {
           >
             <CardContent className="p-6 flex items-start gap-4">
               <div className="p-3 rounded-lg bg-primary/10">
-                <MapPin className="h-5 w-5 text-primary" />
+                <MessageCircle className="h-5 w-5 text-primary" />
               </div>
               <div>
-                <h3 className="font-semibold mb-1">Location</h3>
-                <p className="text-muted-foreground">Bangalore, Karnataka</p>
+                <h3 className="font-semibold mb-1">WhatsApp</h3>
+                <p className="text-muted-foreground">+91 9072238717</p>
               </div>
             </CardContent>
           </Card>
